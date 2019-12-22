@@ -50,7 +50,7 @@ layout: home
         {% assign clients_reviews = site.reviews | where: "type", "client" %}
         {% assign friends_reviews = site.reviews | where: "type", "friend" %}
 
-        <div class="mb-3">What my clients say at <a href="https://www.upwork.com/freelancers/~01a4c4f6d0d586426f" target="_blank"><strong>UpWork</strong></a></div>
+        <div class="mb-3">What my clients say at <!-- <a href="https://www.upwork.com/freelancers/~01a4c4f6d0d586426f" target="_blank"><strong> -->UpWork<!-- </strong></a> --></div>
         {% include reviews.html keys=site.reviews_order type="client" rating=true %}
 
         <hr class="mb-4">
