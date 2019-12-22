@@ -1,0 +1,28 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+		{% if page.title %}
+		  {{ page.title }}
+		{% else %}
+		  {{ site.title }}
+		{% endif %}
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
+
+	<script type="text/javascript">
+		var disqus_enabled = {% if site.disqus_enabled %}true{% else %}false{% endif %};
+	    var disqus_shortname = '{{ site.disqus_shortname }}';
+	</script>
+
+	<script src='{{ "/assets/js/nprogress.js" | prepend: site.baseurl }}'></script>
+	<script src='{{ "/assets/js/turbolinks.js" | prepend: site.baseurl }}'></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src='{{ "/assets/js/script.js" | prepend: site.baseurl }}'></script>
+
+</head>

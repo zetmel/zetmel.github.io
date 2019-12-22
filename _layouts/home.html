@@ -1,0 +1,270 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>Zetmel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
+
+  <style type="text/css">
+    .the-header {
+    /*   padding-top: 5rem; */
+    /*   margin-bottom: 2rem; */
+      padding: 5rem 1.5rem;
+      height: 300px;
+    }
+
+    .the-logo {
+      /*max-width: 320px;*/
+      /*width: 100%;*/
+      /*margin: auto;*/
+      width: 300px;
+      width: 200px;
+    }
+    .the-logo svg, .the-logo img {
+      width: 100%;
+      height: auto;
+    }
+    .the-logo svg {
+      overflow: visible;
+    }
+
+    .the-slogan {
+      font-size: 18px;
+      color: #888;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+
+    .fg-zetmel-z {
+      color: #e30005;
+    }
+    .fg-zetmel-e {
+      color: #9e4ee0;
+    }
+    .fg-zetmel-t {
+      color: #2e73bb;
+    }
+
+    .bg-zetmel-z {
+      background-color: #e30005 !important;
+    }
+    .bg-zetmel-e {
+      background-color: #9e4ee0 !important;
+    }
+    .bg-zetmel-t {
+      background-color: #2e73bb !important;
+    }
+
+    .logo-letter {
+      transition: all 300ms;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .random-letters .zetmel-z {
+      transform: translate3d(-20px, 20px, 0);
+    }
+    .random-letters .zetmel-e1 {
+      transform: translate3d(0px, -15px, 0);
+    }
+    .random-letters .zetmel-t {
+      transform: translate3d(10px, 30px, 0);
+    }
+    .random-letters .zetmel-m {
+      transform: translate3d(5px, -5px, 0);
+    }
+    .random-letters .zetmel-e2 {
+      transform: translate3d(5px, 20px, 0);
+    }
+    .random-letters .zetmel-l {
+      transform: translate3d(-5px, -15px, 0);
+    }
+
+    .navbar {
+      transition: transform 300ms;
+      transform: translate3d(0, 0, 0);
+    }
+    .on-top .navbar {
+      transform: translate3d(0, -65px, 0);
+    }
+    .the-logo-dummy {
+/*      width: 300px;
+      height: 300px;*/
+      opacity: 0.25;
+      visibility: hidden;
+      margin: auto;
+    }
+    .the-logo-fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: visible;
+      /*width: 300px;*/
+      width: 100%;
+      height: 100%:;
+      bottom: auto;
+      height: 300px;
+      z-index: 5;
+/*      height: 300px;*/
+      /*z-index: 2;*/
+    }
+    .the-logo-fixed svg {
+      width: 300px;
+      width: 200px;
+      height: auto;
+      transition: all 300ms;
+      /*transform: translate3d(calc(50vw - 50%), 80px, 0px);*/
+      transform: translate3d(calc(50vw - 50%), 80px, 0px) scale3d(1, 1, 1);
+      /*transform: translate3d(calc(50vw - 50%), 80px, 0px) scale3d(0.9, 0.9, 0.9);*/
+
+    }
+    .not-on-top .the-logo-fixed svg {
+      transform: translate3d(0, 0, 0);
+      transform: translate3d(-35px, -30px, 0) scale3d(0.4, 0.4, 1);
+
+      transform-origin: top left;
+      /*transform: translate3d(0px, 0px, 0) scale3d(0.5, 0.5, 1);*/
+      transform: translate3d(15px, 8px, 0) scale3d(0.5, 0.5, 1);
+      /*transform: translate3d(calc(50vw - 50%), 0px, 0) scale3d(0.4, 0.4, 1);*/
+    }
+    .not-on-top .the-logo-fixed {
+      right: auto;
+      bottom: auto;
+      width: auto;
+      height: auto;
+      z-index: 2000;
+    }
+    section {
+      position: relative;
+      z-index: 3;
+    }
+
+    .the-header {
+/*      background: url('assets/studio.jpg');
+      background-size: cover;*/
+    }
+
+body {
+}
+    .jumbotron {
+      background: url(assets/studio.jpg);
+      background-size: cover;
+      /*background-position: center;*/
+      /*background-position: top right;*/
+      border-radius: 0;
+      color: #FFF;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+    }
+
+    .jumbotron hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      margin: 0 -15px;
+    }
+
+    .jumbotron .container {
+      background: rgba(0, 0, 0, 0.75);
+      /*background: rgba(255, 255, 255, 0.75);*/
+      padding: 5px 15px;
+      -webkit-backdrop-filter(3px);
+      backdrop-filter: blur(3px);
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.9) !important;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+
+    .brand-owner {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 2000;
+      /*padding: 10px 15px;*/
+      padding: 13px 15px;
+    }
+    .reviews-wrapper {
+      background: #e9ecef;
+    }
+    .rating-stars {
+      height: 12px;
+      width: 68px;
+    }
+    .rating-stars svg {
+      width: 100%;
+      height: 100%;
+    }
+
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+  </style>
+  </head>
+  <body class="brand-expanded on-top">
+
+<nav class="navbar navbar-expand fixed-top navbar-light bg-white px-0" style="height: 3.5rem;">
+    <div class="container" style="padding-left: 15px;
+      padding-right: 15px; max-width: 100%;">
+      <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
+        <!-- <img style="width: 40px; height: 40px; border-radius: 50%;" src="/vue-file-agent/website/assets/logo.png?v=1.5.0"> -->
+        <!-- Vue File Agent -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+<!--       <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/vue-file-agent/docs/">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/safrazik/vue-file-agent">GitHub</a>
+          </li>
+        </ul>
+      </div> -->
+      <!-- <small class="navbar-text">Every file deserves to be treated equally</small> -->
+    </div>
+  </nav>
+
+  <div class="brand-owner">
+    <span class="safrazik">
+      <span class="saf">saf</span><span class="last raz">raz</span><span class="first raz">raz</span><span class="ik">ik</span><span class="" style="visibility: hidden;">ik</span>
+    </span>
+  </div>
+
+    <!-- <div class="the-header-dummy"></div> -->
+    <header class="the-header">
+      <div class="the-logo the-logo-dummy">
+        {% include_relative assets/logo.svg %}
+      </div>
+      <div class="the-logo the-logo-fixed">
+        <!-- <img src="logo.png"> -->
+        <a href="{{ "/" | prepend: site.baseurl }}">
+          {% include_relative assets/logo.svg %}
+        </a>
+      </div>
+      <div class="the-slogan">
+        <!-- from Safraz Razik -->
+        <!-- Attractive, Efficient and Reliable -->
+        Innovation, Limitless.
+      </div>
+    </header>
+    {{ content }}
+
+    <!-- <script src='{{ "/assets/js/nprogress.js" | prepend: site.baseurl }}'></script> -->
+    <!-- <script src='{{ "/assets/js/turbolinks.js" | prepend: site.baseurl }}'></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src='{{ "/assets/js/script.js" | prepend: site.baseurl }}'></script>
+  </body></html>
