@@ -27,6 +27,14 @@
           <small class="text-muted">{{ review.at }}</small>
           {% endif %}
         </h6>
+
+        {% if review.description %}
+        <div style="margin-top: -0.75rem; margin-bottom: 0.75rem;">
+          <small class="text-muted">
+            {{ review.description }}
+          </small>
+        </div>
+        {% endif %}
         <div class="card-text mb-0">{{ review.content }}</div>
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 

@@ -7,4 +7,4 @@ stars: 5
 
 ---
 
-He is fast and his code quality is **stellar**.
+He is fast and his **code quality** is **stellar**.

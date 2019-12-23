@@ -1,6 +1,7 @@
 --- 
 key: Majaz
 name: Majaz
+description: Senior Officer
 type: "friend"
 at: Nov 2019
 reaction: "like"

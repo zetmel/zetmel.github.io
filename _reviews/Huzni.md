@@ -1,6 +1,7 @@
 --- 
 key: Huzni
 name: Huzni
+description: Senior Software Engineer
 type: "friend"
 at: Nov 2019
 reaction: "love"

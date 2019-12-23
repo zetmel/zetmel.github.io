@@ -1,6 +1,7 @@
 --- 
 key: Nasmaan
 name: Nasmaan
+description: Quantity Surveyor
 type: "friend"
 at: Nov 2019
 reaction: "love"

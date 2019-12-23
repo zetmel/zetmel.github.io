@@ -1,6 +1,7 @@
 --- 
 key: Hifans
 name: Hifans
+description: Developer | Contributor at <a href="https://stackoverflow.com/users/7352537/anfath-hifans" target="_blank">Stack Overflow</a>
 type: "friend"
 at: Nov 2019
 reaction: "like"

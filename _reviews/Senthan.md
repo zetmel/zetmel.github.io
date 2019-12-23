@@ -1,6 +1,7 @@
 --- 
 key: Senthan
 name: Senthan
+description: Engineer
 type: "friend"
 at: Nov 2019
 reaction: "like"

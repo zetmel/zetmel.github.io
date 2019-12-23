@@ -1,6 +1,7 @@
 --- 
 key: Inaamul_Hassan
 name: Inaamul Hassan
+description: Assistant Director (IT)
 type: "friend"
 at: Nov 2019
 reaction: "love"
