@@ -8,4 +8,4 @@ reaction: "like"
 
 ---
 
-Exceptionally talented.. wish you a great success bro.
+**Exceptionally** talented.. wish you a great success bro.

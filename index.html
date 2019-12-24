@@ -47,13 +47,18 @@ layout: home
 
 <section class="mb-4">
   <div class="container">
-    <small>
-      {% assign replace_code = ".replace('I', 'We')" %}
-      I want to change from "I" to "We" with the code: <code>{{ replace_code }}</code> <br>
-      and a <strong>great team</strong> who share my dream and values, and identify the possible issue with the above code :-)
-    </small>
-    <blockquote style="display: none;">
+    <div class="mb-3">
+      <small>
+        {% assign replace_code = ".replace('I', 'We')" %}
+        I want to change from "I" to "We" with the code: <code>{{ replace_code }}</code> <br>
+        and a <strong>great team</strong> who share my dream and values.
+      </small>
+    </div>
+    <blockquote class="alert alert-success">
       Find a good boss to work <strong>with</strong>, not a good company to work <strong>for</strong> - Jack Ma
+      <div class="mt-2">
+        <a href="https://www.facebook.com/zetmelcom" class="btn btn-success btn-sm">Become a Zeteran</a>
+      </div>
     </blockquote>
   </div>
 </section>
@@ -67,13 +72,44 @@ layout: home
         <div class="mb-3">What my clients say at <!-- <a href="https://www.upwork.com/freelancers/~01a4c4f6d0d586426f" target="_blank"><strong> -->UpWork<!-- </strong></a> --></div>
         {% include reviews.html keys=site.reviews_order type="client" rating=true %}
 
+
         <hr class="mb-4">
         <!-- <div class=""></div> -->
 
-        <div class="mb-3">How my friends reacted when I shared <a href="https://safrazik.github.io/resume/" target="_blank"><strong>My Resume</strong></a> for inspiration on Facebook:</div>
+        <div class="mb-3">How my friends reacted when I shared <a href="https://safrazik.github.io/resume/"><strong>My Resume</strong></a> for inspiration on Facebook:</div>
         {% include reviews.html keys=site.comments_order type="friend" rating=false %}
+
+
      </div>
       {% include stars.svg %}
+</section>
+<section class="mb-3 pt-2">
+  <div class="container">
+    <div class="card card-body bg-white text-center" style="width: 270px; margin: auto;">
+      <p class="card-text">
+        I value every like, love and comment, and I enjoy responding to them. I consider you as <strong>my partner</strong> instead of <em>a follower</em>. Thank you for being my valued Zetner!
+      </p>
+      <div class="mt-2">
+        <a href="https://www.facebook.com/zetmelcom" class="btn btn-success btn-sm">Become a Zetner (Zet Partner)</a>
+      </div>
+    </div>
+
+    <style type="text/css">
+      .the-promo {
+        width: 270px;
+        margin: auto;
+        margin-top: 15px;
+      }
+    </style>
+    <div class="the-promo">
+      <div class="text-center mb-2">or click the <strong>Like</strong> button below</div>
+<div class="fb-page" data-href="https://www.facebook.com/zetmelcom" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/zetmelcom" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/zetmelcom">Zetmel</a></blockquote></div>
+    </div>
+  </div>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=1268078626717710&autoLogAppEvents=1"></script>
+
 </section>
 <section class="mb-3 pt-2">
    <!-- <div class="jumbotron jumbotron-fluid"> -->
@@ -82,7 +118,7 @@ layout: home
        <p class="lead"><a href="mailto:safrazik@zetmel.com">safrazik@zetmel.com</a></p>
 
        <p>
-         <small>Copyright &copy; 2019 Zetmel - All Rights Reserved.<br>Photo by Artboard Studio</small>
+         <small>Copyright &copy; 2019, 2020 Zetmel - All Rights Reserved.<br>Photo by Artboard Studio</small>
        </p>
      </div>
    <!-- </div> -->
