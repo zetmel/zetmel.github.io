@@ -1,7 +1,7 @@
 --- 
 key: Majaz
 name: Majaz
-description: Senior Officer
+description: Senior Officer - Treasury
 type: "friend"
 at: Nov 2019
 reaction: "like"
