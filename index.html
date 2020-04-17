@@ -5,9 +5,15 @@ layout: home
 <section class="jumbotron jumbotron-fluid mb-4">
   <div class="container">
     <!-- <h1 class="display-4">Creating* <strong>Apps</strong> that "just work"</h1> -->
-    <h1 class="display-4">We cook <strong>Apps</strong> that can be eaten<strong>*</strong></h1>
-    <p class="lead">We have <strong>"Collective Experience"</strong> in developing world class apps for <strong>Web, iOS and Android</strong> platforms with proven technology stack with a reasonable budget and deadline.</p>
-    <hr class="my-4">
+    <h1 class="display-4">
+      We cook <strong>Apps</strong> that can be eaten<strong>*</strong>
+    </h1>
+    <p class="lead">
+      We have <strong>"Collective Experience"</strong> in developing world class
+      apps for <strong>Web, iOS and Android</strong> platforms with proven
+      technology stack with a reasonable budget and deadline.
+    </p>
+    <hr class="my-4" />
     <!-- <p>* We don't just develop or design. We input our creative ideas to make your product stand out of the crowd.</p> -->
     <p>* More often than not, rotten apps cannot be eaten</p>
     <!-- <a class="btn btn-primary btn-lg" href="#" role="button">What else we do?</a> -->
@@ -21,7 +27,10 @@ layout: home
         <div class="card text-white bg-zetmel-z h-100">
           <div class="card-body">
             <h5 class="card-title">Attractive,</h5>
-            <p class="card-text">Beautiful design, smooth user experience and straightforward user interface should invite users to your app.</p>
+            <p class="card-text">
+              Beautiful design, smooth user experience and straightforward user
+              interface should invite users to your app.
+            </p>
           </div>
         </div>
       </div>
@@ -29,7 +38,10 @@ layout: home
         <div class="card text-white bg-zetmel-e h-100">
           <div class="card-body">
             <h5 class="card-title">Efficient,</h5>
-            <p class="card-text">Of course you can't and shouldn't sacrifice performance over great features. Prefer to have both.</p>
+            <p class="card-text">
+              Of course you can't and shouldn't sacrifice performance over great
+              features. Prefer to have both.
+            </p>
           </div>
         </div>
       </div>
@@ -37,7 +49,10 @@ layout: home
         <div class="card text-white bg-zetmel-t h-100">
           <div class="card-body">
             <h5 class="card-title">and Reliable</h5>
-            <p class="card-text">Software is a long term commitment, make sure yours is built on solid standards and best engineering principles.</p>
+            <p class="card-text">
+              Software is a long term commitment, make sure yours is built on
+              solid standards and best engineering principles.
+            </p>
           </div>
         </div>
       </div>
@@ -49,48 +64,55 @@ layout: home
   <div class="container">
     <div class="mb-3">
       <small>
-        {% assign replace_code = ".replace('I', 'We')" %}
-        I want to change from "I" to "We" with the code: <code>{{ replace_code }}</code> <br>
+        {% assign replace_code = ".replace('I', 'We')" %} I want to change from
+        "I" to "We" with the code: <code>{{ replace_code }}</code> <br />
         and a <strong>great team</strong> who share my dream and values.
       </small>
     </div>
     <blockquote class="alert alert-success">
-      Find a good boss to work <strong>with</strong>, not a good company to work <strong>for</strong> - Jack Ma
+      Find a good boss to work <strong>with</strong>, not a good company to work
+      <strong>for</strong> - Jack Ma
       <div class="mt-2">
-        <a href="https://www.facebook.com/zetmelcom" class="btn btn-success btn-sm">Become a Zeteran</a>
+        <a
+          href="https://www.facebook.com/zetmelcom"
+          class="btn btn-success btn-sm"
+          >Become a Zeteran</a
+        >
       </div>
     </blockquote>
   </div>
 </section>
 
- <section class="mb-3 reviews-wrapper pt-4 pb-3">
-     <div class="container">
-        <!-- <div class="mb-3">Our clients say</div> -->
-        {% assign clients_reviews = site.reviews | where: "type", "client" %}
-        {% assign friends_reviews = site.reviews | where: "type", "friend" %}
+<section class="mb-3 reviews-wrapper pt-4 pb-3">
+  <div class="container">
+    <!-- <div class="mb-3">Our clients say</div> -->
+    {% assign clients_reviews = site.reviews | where: "type", "client" %} {%
+    assign friends_reviews = site.reviews | where: "type", "friend" %}
 
-        <div class="mb-3">What my clients say at <!-- <a href="https://www.upwork.com/freelancers/~01a4c4f6d0d586426f" target="_blank"><strong> -->UpWork<!-- </strong></a> --></div>
-        {% include reviews.html keys=site.reviews_order type="client" rating=true %}
-
-
-        <hr class="mb-4">
-        <!-- <div class=""></div> -->
-
-        <div class="mb-3">How my friends reacted when I shared <a href="https://safrazik.github.io/resume/"><strong>My Resume</strong></a> for inspiration on Facebook:</div>
-        {% include reviews.html keys=site.comments_order type="friend" rating=false %}
-
-
-     </div>
-      {% include stars.svg %}
+    <div class="mb-3">
+      What our clients say
+    </div>
+    {% include reviews.html keys=site.reviews_order type="client" rating=true %}
+  </div>
+  {% include stars.svg %}
 </section>
 <section class="mb-3 pt-2" style="display: none;">
   <div class="container">
-    <div class="card card-body bg-white text-center" style="width: 270px; margin: auto;">
+    <div
+      class="card card-body bg-white text-center"
+      style="width: 270px; margin: auto;"
+    >
       <p class="card-text">
-        I value every like, love and comment, and I enjoy responding to them. I consider you as <strong>my partner</strong> instead of <em>a follower</em>. Thank you for being my valued Zetner!
+        I value every like, love and comment, and I enjoy responding to them. I
+        consider you as <strong>my partner</strong> instead of
+        <em>a follower</em>. Thank you for being my valued Zetner!
       </p>
       <div class="mt-2">
-        <a href="https://www.facebook.com/zetmelcom" class="btn btn-success btn-sm">Become a Zetner (Zet Partner)</a>
+        <a
+          href="https://www.facebook.com/zetmelcom"
+          class="btn btn-success btn-sm"
+          >Become a Zetner (Zet Partner)</a
+        >
       </div>
     </div>
 
@@ -102,24 +124,52 @@ layout: home
       }
     </style>
     <div class="the-promo">
-      <div class="text-center mb-2">or click the <strong>Like</strong> button below</div>
-<div class="fb-page" data-href="https://www.facebook.com/zetmelcom" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/zetmelcom" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/zetmelcom">Zetmel</a></blockquote></div>
+      <div class="text-center mb-2">
+        or click the <strong>Like</strong> button below
+      </div>
+      <div
+        class="fb-page"
+        data-href="https://www.facebook.com/zetmelcom"
+        data-tabs=""
+        data-width=""
+        data-height=""
+        data-small-header="false"
+        data-adapt-container-width="true"
+        data-hide-cover="false"
+        data-show-facepile="true"
+      >
+        <blockquote
+          cite="https://www.facebook.com/zetmelcom"
+          class="fb-xfbml-parse-ignore"
+        >
+          <a href="https://www.facebook.com/zetmelcom">Zetmel</a>
+        </blockquote>
+      </div>
     </div>
   </div>
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=1268078626717710&autoLogAppEvents=1"></script>
-
+  <div id="fb-root"></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=1268078626717710&autoLogAppEvents=1"
+  ></script>
 </section>
 <section class="mb-3 pt-2">
-   <!-- <div class="jumbotron jumbotron-fluid"> -->
-     <div class="container text-center">
-       <!-- <h1 class="display-4">Contact</h1> -->
-       <p class="lead"><a href="mailto:safrazik@gmail.com">safrazik@gmail.com</a></p>
+  <!-- <div class="jumbotron jumbotron-fluid"> -->
+  <div class="container text-center">
+    <!-- <h1 class="display-4">Contact</h1> -->
+    <p class="lead">
+      <a href="mailto:safrazik@gmail.com">safrazik@gmail.com</a>
+    </p>
 
-       <p>
-         <small>Copyright &copy; 2018 - 2020 Safraz Razik, Zetmel - All Rights Reserved.<br>Photo by Artboard Studio</small>
-       </p>
-     </div>
-   <!-- </div> -->
+    <p>
+      <small
+        >Copyright &copy; 2018 - 2020 Safraz Razik, Zetmel - All Rights
+        Reserved.<br />Photo by Artboard Studio</small
+      >
+    </p>
+  </div>
+  <!-- </div> -->
 </section>
